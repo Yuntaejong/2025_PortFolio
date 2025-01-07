@@ -50,3 +50,12 @@ nav li a:hover {
 #fullpage {
 	padding:0 60px;
 }
+
+/* section1 - intro */
+.title {
+    font-size: 100px;
+}
+
+.title span:first-child {
+	font-size: 50px;
+}
