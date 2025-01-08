@@ -7,7 +7,7 @@ $(function(){
 			scrollingSpeed: 500,
 			fitToSection: true,
 			lockAnchors: true,
-			anchors: ['section1', 'section2', 'section3', 'section4'],
+			anchors: ['section1', 'section2', 'section3'],
 			onLeave:function(index, nextIndex, direction) {
 				if(index == 1 && direction == 'down') {
 					$('.header-seciton').css('display','none');
@@ -18,6 +18,15 @@ $(function(){
 				} 
 			}
 		});
+		
+		$.fn.fullpage.setAllowScrolling(false);
+
+		$('.intro button').click(function(){
+			$('.intro').fadeOut();
+			$.fn.fullpage.setAllowScrolling(true);
+		});
+		
+
 
 	});
 });
