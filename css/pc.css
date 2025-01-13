@@ -7,16 +7,12 @@ header {
 	left:0;
 	top:0;
 	display:none;
-	transition: all 0.3s ease;
 }
 
 header nav {
-	height: 100%;
-	background-color: #fff;
-	font-family: 'SF_HambakSnow';
 	font-size: 24px;
 	padding:0 60px;
-	transition: all 0.3s;
+	transition: all 0.3s ease;
 }
 
 header nav:hover {
@@ -36,26 +32,32 @@ nav li a {
 	padding:10px;
 	position: relative;
 	text-align: center;
-	color:#555;
-	transition: all 0.3s;
-}
-nav li a:hover {
-	color:#000;
-	letter-spacing: 0.25rem;
 }
 
 
 
 /* main */
 #fullpage {
-	padding:0 60px;
+	padding:0 5%;
 }
 
-/* section1 - intro */
+h2 {
+	font-size: 48px;
+	font-weight: 500;
+}
+
+/*  intro */
 .title {
     font-size: 100px;
 }
 
 .title span:first-child {
 	font-size: 50px;
+}
+
+/* section1 - Resume */
+.section1 {
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
 }
