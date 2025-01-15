@@ -56,8 +56,45 @@ h2 {
 }
 
 /* section1 - Resume */
-.section1 {
+
+.section1 .fp-tableCell {
 	display:flex;
 	align-items: center;
-	justify-content: space-around;
+	gap:20%;
+}
+
+.section1 h2 {
+	width:40%;
+	text-align: center;
+}
+.section > div > div {
+	width:100%;
+}
+.section1 h3 {
+	font-size: 30px;
+	margin-bottom:0.75em;
+}
+
+.section1 ul {
+	padding-left:5%;
+}
+.career, .skill {
+	text-align: left;
+}
+.career {
+	margin-bottom:0.75em;
+}
+.career ul {
+	display:flex;
+	flex-direction: column;
+	gap:20px;
+}
+.career ul li {
+	display:flex;
+	flex-direction: column;
+	gap:10px;
+
+}
+.career ul li span:last-child {
+	margin-left:10px;
 }

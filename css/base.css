@@ -19,14 +19,14 @@ body {
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
 	display:flex;
 	align-items: center;
-	justify-content: center;
 	z-index: 1;
+	padding-left:10%;
 }
 
 h1 a {
-	background: url(../images/logo.png) no-repeat 100% 100% / cover;
-	width:40px;
-	height: 40px;
+	background: url(../images/logo.svg) no-repeat 100% 100% / contain;
+	width:84px;
+	height: 30px;
 	text-indent: -9999em;
 	display:block;
 }
@@ -140,7 +140,23 @@ h1 a {
 
 #fp-nav ul li a.active span {background:#009DFF !important;}
 
-/* section2 - Resume */
+/* section1 - Resume */
+.icon {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.photoshop {background-image: url(../images/icon_photoshop.png); width:40px; height:40px;}
+.illustrator {background-image: url(../images/icon_illutrator.png); width:40px; height:40px;}
+.figma {background-image: url(../images/icon_figma.svg); width:40px; height:40px;}
+.html {background-image: url(../images/icon_html.svg); width:40px; height:40px;}
+.css {background-image: url(../images/icon_css.svg); width:40px; height:40px;}
+.js {background-image: url(../images/icon_js.svg); width:40px; height:40px;}
+.jquery {background-image: url(../images/icon_jquery.svg); width:40px; height:40px;}
+.scss {background-image: url(../images/icon_sass.svg); width:40px; height:40px;}
+.react {background-image: url(../images/icon_react.svg); width:40px; height:40px;}
 
+/* section2 - About */
 .section2 {background-color: #124551;}
 .section3 {background-color: #723733;}
