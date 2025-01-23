@@ -76,9 +76,15 @@ h2 {
 	justify-content: center;
 	gap:10%;
 }
-
+.about > span {
+	font-size: 32px;
+}
 .spec {
 	width: 100%;
+}
+.myself li:nth-child(4) {
+	display:flex;
+	align-items: start;
 }
 .myself > * {margin-bottom: 20px;}
 
@@ -109,7 +115,7 @@ h2 {
 	text-align: left;
 }
 .career {
-	margin-bottom:0.75em;
+	margin-bottom:40px;
 }
 .career ul {
 	display:flex;
@@ -153,4 +159,4 @@ h2 {
 	gap:20px;
 }
 
-.skill ul:first-of-type {margin-bottom: 20px;}
+.skill ul:first-of-type {margin-bottom: 40px;}
