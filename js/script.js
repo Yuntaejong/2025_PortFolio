@@ -20,7 +20,10 @@ $(function(){
 			$('header, #fp-nav').fadeIn();
 			$.fn.fullpage.setAllowScrolling(true);
 		});
-		
+		$('.button button').click(function(){
+			$('.button button').removeClass('active');
+			$(this).addClass('active');
+		});
 
 
 	});
