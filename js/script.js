@@ -23,8 +23,13 @@ $(function(){
 		$('.button button').click(function(){
 			$('.button button').removeClass('active');
 			$(this).addClass('active');
+
+			let target = $(this).data('target');
+			$('.content-wrap .work').hide();
+			$('.content-wrap .'+ target).show();
 		});
 
-
+		$('.content-wrap .work').hide();
+		$('.content-wrap .work1').show();
 	});
 });

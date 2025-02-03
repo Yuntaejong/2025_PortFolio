@@ -20,7 +20,7 @@ button {background: none; border:none; cursor: pointer; font-family: 'Pretendard
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
 	display:flex;
 	align-items: center;
-	z-index: 1;
+	z-index: 2;
 	padding-left:10%;
 }
 
@@ -125,7 +125,7 @@ h1 a {
 	justify-content: space-around;
 	background-color: #fff;
 	box-shadow: 0 2px 5px 5px #00000010;
-	z-index: 10;
+	z-index: 1;
 }
 
 
@@ -224,6 +224,18 @@ h1 a {
 .color12 {background: #000000;}
 .color13 {background: #FFFFFF; border:1px solid #333;}
 
+.color {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	gap:10px;
+}
+.color li{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	gap:10px;
+}
 
 
 /* Button Effect / css */
@@ -271,5 +283,17 @@ h1 a {
 
 .spec .btn::after {
 	content:"이력서 보기";
+}
+#tab-content button {
+	display: block;
+    text-align: center;
+    color: #333;
+    transition: .3s;
+    background: #fff;
+    position: relative;
+	border-radius: 20px;
+}
+.button button.active span {
+	color:#fff;
 }
 
