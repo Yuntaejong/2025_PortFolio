@@ -266,7 +266,7 @@ h2 {
 	align-items: center;
 	justify-content: center;
 	gap:10px;
-	height: 60px;;
+	height: 60px;
 }
 
 .concept > div:last-child {
@@ -277,4 +277,40 @@ h2 {
 .concept > div:last-child p {
 	line-height: 20px;
 	color:#505050;
+}
+
+
+/* work css */
+.work-wrap {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	gap:8%;
+}
+
+.mockup {
+	width:700px;
+}
+.mockup img {
+	width:100%;
+	height:100%;
+	object-fit: cover;
+	object-position: center;
+}
+.desc-wrap {
+	display:flex;
+	flex-direction: column;
+	gap:20px;
+}
+.subject {
+	padding-bottom:10px;
+	border-bottom:0.5px solid #000;
+}
+.subject h3 {
+	font-size: 24px;
+    font-weight: bold;
+	margin-bottom:10px;
+}
+.subject p {
+	font-size: 14px;
 }
