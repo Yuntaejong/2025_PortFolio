@@ -170,8 +170,11 @@ h1 a {
 #fp-nav ul li:nth-child(7) a.active:after {
 	content:"04"
 }
-#fp-nav ul li:last-child a.active:after {
+#fp-nav ul li:nth-child(8) a.active:after {
 	content:"05"
+}
+#fp-nav ul li:last-child a.active:after {
+	content:"06"
 }
 
 #fp-nav ul li a.active span {background:#009DFF !important;}
@@ -342,10 +345,10 @@ h1 a {
 }
 .link-list a {
 	position: relative;
-    display: inline-block;
-    text-align: center;
-    font-size: 14px;
-    color: #fff;
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
 }
 .link-list li:first-child a {width:120px;}
 .link-list li:nth-child(2) a {width:200px;}
@@ -353,28 +356,28 @@ h1 a {
 
 .link-list a::after, .link-list a::before {
 	position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    padding: 10px 0;
-    border-radius: 20px;
-    transition: all .5s;
+	display: block;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	border-radius: 20px;
+	transition: all .5s;
 }
 .link-list a::after {
 	font-family: "Pretendard Variable";
-    transform: translateY(0) rotateX(0);
-    border: 1px solid #333;
-    background: #fff;
-    color: #333;
-    opacity: 1;
+	transform: translateY(0) rotateX(0);
+	border: 1px solid #333;
+	background: #fff;
+	color: #333;
+	opacity: 1;
 }
 .link-list a::before {
 	content:"Click";
 	font-family: "Pretendard Variable";
-    transform: translateY(0) rotateX(0);
-    background: #000;
-    color: #fff;
-    opacity: 0;
+	transform: translateY(0) rotateX(0);
+	background: #000;
+	color: #fff;
+	opacity: 0;
 }
 .link-list li:first-child a::before {width:120px;}
 .link-list li:nth-child(2) a::before {width:200px;}
@@ -408,10 +411,23 @@ h1 a {
 	transform: translate(-50%, -50%);
 	background: rgba(255, 255, 255, 0.5);
 	width: 100%;
-	height: 300px;
+	height: 0px;
 	transition: 1s;
 	z-index: 0;
 }
 
+.pro_bg2 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	transition: .8s;
+	opacity: .8;
+}
+
+.section4 .pro_bg2, .section6 .pro_bg2, .section8 .pro_bg2 {left: 30%;}
+.section5 .pro_bg2, .section7 .pro_bg2 {right: 30%;}
 
 
