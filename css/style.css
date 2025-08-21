@@ -322,6 +322,16 @@ nav li a {
 }
 @media screen and (max-width:1024px) {
     .desc li span {margin-bottom: 10px;}
+
+	/* section3 */
+	#tab-content {padding:1% .5%; height: 80%;}
+	.button {gap:20px;}
+	#tab-content button {font-size: 16px; width:180px; height: 60px; line-height: 0;}
+	.work {flex-direction: column; justify-content:center; gap:40px;}
+	.concept {flex-direction: column; justify-content: center; gap:20px; width: unset;}
+	.concept div:first-child, .concept div:nth-child(2) {margin: 0 auto;}
+	.concept > div:nth-child(2) ul {height: unset;}
+	.concept > div:last-child {margin: 0;}
 }
 
 @media screen and (max-width:768px) {
@@ -335,9 +345,38 @@ nav li a {
     .section1 .content { gap:40px;}
     .section1 .fp-tableCell {flex-direction: column; justify-content: center}
     .about {text-align: center;}
+	.about > span {font-size: 28px;}
     .myself > * {margin-bottom:25px; display: flex; flex-direction: column; gap:10px; justify-content: center !important; align-items: center !important;}
     .tag {margin:0; font-size: 20px;}
 
 
     /* section2 */
+	.section2 .fp-tableCell {flex-direction: column; justify-content: center}
+	.section2 h2 {width: 100%;}
+	.skill ul {flex-wrap: wrap;}
+	
+	/* section3 */
+	#tab-content {height: 90%;}
+	.button {flex-direction: column;}
+	#tab-content button {width: 100%; position: relative; border-radius: 15px;}
+	#tab-content button::after {content:""; position: absolute; bottom:-10px; left:50%; transform: translateX(-50%); height: 1px; width: 100%; background-color: #33333367;}
+	#tab-content button:last-child:after {display: none;}
+	.work {gap:20px;}
+	.work img {width: 200px;}
+
+	/* work */
+	.work-wrap {flex-direction: column;}
+	.work-line {top:70%;}
+
+	.desc li span:first-child {width: 120px;}
+	.mockup {width: 100%;}
+	.subject {text-align: center;}
+	.subject p {font-size: 12px;}
+	.desc-wrap {width: 100%;}
+	.desc li span {font-size: 14px;}
+		.link-list {gap:2%;}
+}
+
+@media screen and (max-width:450px) {
+	.link-list {gap:30px; flex-direction: column;}
 }
